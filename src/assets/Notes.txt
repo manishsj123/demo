@@ -1,0 +1,7 @@
+npx json-server --watch db.json --port 3000
+Run JSON server without install it
+
+https://app.chaturji.ai/
+
+Angular Snippets
+Auto compleate For Angular
