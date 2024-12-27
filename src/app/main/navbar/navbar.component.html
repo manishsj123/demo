@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a class="nav-link"><i class="fas fa-tachometer-alt"></i>Logo</a>
+            </li>
+            <li class="nav-item active" id="home" (click)="setActiveLink($event)">
+                <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item" id="proc" (click)="setActiveLink($event)">
+                <a class="nav-link">proc</a>
+            </li>
+            <li class="nav-item" id="login" (click)="setActiveLink($event)">
+                <a class="nav-link"><i class="far fa-calendar-alt"></i>login</a>
+            </li>
+            <li class="nav-item" id="Charts" (click)="setActiveLink($event)">
+                <a class="nav-link"><i class="far fa-chart-bar"></i>Charts</a>
+            </li>
+            <li class="nav-item" id="Documents" (click)="setActiveLink($event)">
+                <a class="nav-link">Documents</a>
+            </li>
+        </ul>
+    </div>
+</nav>

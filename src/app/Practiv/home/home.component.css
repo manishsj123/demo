@@ -1,14 +1,17 @@
-body{
-    font-size: 12px;
-    font-family: math;
-}
-
-.routeDiv{
+.mainDiv{
     background-image: url(https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_98aaf3a37b4d733bdb3bc7754c25ad3608c520c5ebb9b1079f2d0c2f78b07ab8.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: #00f4ff;
     height: 80vh;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+}
+
+.page_title{
+    font-size: 70px;
+    /* background-image: url(../../../Assets/Logo-removebg.png); */
+}
+
+.mainDiv img{
+    height: 150px;
+    margin-top: 70px;
 }
