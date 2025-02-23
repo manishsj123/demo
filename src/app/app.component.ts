@@ -7,12 +7,13 @@ import { Router, RouterModule } from '@angular/router';
 import { LoginPageComponent } from "./Practiv/login-page/login-page.component";
 import { CommanServiceService } from './comman/service/comman-service.service';
 import { NavbarComponent } from "./main/navbar/navbar.component";
+import { FileMComponent } from "./file-m/file-m.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterModule, LoginPageComponent, NavbarComponent],
+  imports: [ReactiveFormsModule, CommonModule, RouterModule, NavbarComponent, FileMComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -56,18 +57,18 @@ export class AppComponent {
   }
 
   getdata() {
-    this.data.getdata().subscribe({
-      next: (res: any) => {
-        console.log(res);
-        // this.formValue = [];
-        // res.forEach((ele: any) => {
-        //   this.formValue.push(ele);
-        // });
-      },
-      error: (err: any) => {
-        console.log(err);
-      }
-    })
+    // this.data.getdata().subscribe({
+    //   next: (res: any) => {
+    //     console.log(res);
+    //     // this.formValue = [];
+    //     // res.forEach((ele: any) => {
+    //     //   this.formValue.push(ele);
+    //     // });
+    //   },
+    //   error: (err: any) => {
+    //     console.log(err);
+    //   }
+    // })
   }
 
   get r() {

@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +14,9 @@ tiggerfunction(value:any){
   this.navigate.next(value);
 }
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+
+  getdata():Observable<any[]>{
+    return this.http.get<any[]>("http://localhost:3000/data");
+  }
 }
