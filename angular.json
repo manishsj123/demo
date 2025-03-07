@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/styles.css",
+              "ngx-explorer/src/assets/icons/css/nxe.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css"
             ],
@@ -39,7 +40,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "800kB",
                   "maximumError": "1MB"
                 },
                 {
